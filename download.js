@@ -1,4 +1,4 @@
-return function download(data, strFileName, strMimeType) {
+function download(data, strFileName, strMimeType) {
 
 		var self = window, // this script is only for browsers anyway...
 			defaultMime = "application/octet-stream", // this default mime also triggers iframe downloads
