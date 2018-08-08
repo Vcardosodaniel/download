@@ -1,5 +1,6 @@
-function (data, strFileName, strMimeType) {
-	var self = window, // this script is only for browsers anyway...
+return function download(data, strFileName, strMimeType) {
+
+		var self = window, // this script is only for browsers anyway...
 			defaultMime = "application/octet-stream", // this default mime also triggers iframe downloads
 			mimeType = strMimeType || defaultMime,
 			payload = data,
@@ -143,4 +144,4 @@ function (data, strFileName, strMimeType) {
 			reader.readAsDataURL(blob);
 		}
 		return true;
-};
+	};
