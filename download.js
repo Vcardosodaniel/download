@@ -143,4 +143,4 @@ function (data, strFileName, strMimeType) {
 			reader.readAsDataURL(blob);
 		}
 		return true;
-}));
+};
